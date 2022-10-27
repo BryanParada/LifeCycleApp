@@ -16,6 +16,8 @@ export class Page1Component implements
         AfterViewChecked,
         OnDestroy {
 
+  name: string = 'Bryan';
+
   constructor() {
     console.log('constructor');
     
@@ -47,6 +49,9 @@ export class Page1Component implements
     
   }
 
+  save(){
+
+  }
   
 
 }

@@ -1,4 +1,8 @@
 <h3>Life Cycle</h3>
 <hr>
 
-<app-page1></app-page1>
+<button (click)="show = !show">
+    {{ show ? 'Hide me for ngOnDestroy!' : 'Show app Page1'}}
+</button>
+
+<app-page1 *ngIf="show"></app-page1>
